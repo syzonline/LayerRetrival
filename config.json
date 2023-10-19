@@ -1,0 +1,32 @@
+{
+    "debug" : false,
+    "image_path" : "./dataset/Flicker8k_images",
+    "captions_path" : "./dataset",
+    "batch_size" : 32,
+    "num_workers" : 4,
+    "head_lr" : 1e-3,
+    "image_encoder_lr" : 1e-4,
+    "text_encoder_lr" : 1e-5,
+    "weight_decay" : 1e-3,
+    "patience" : 1,
+    "factor" : 0.8,
+    "epochs" : 2,
+    "device" : "cuda:0",
+
+    "model_name" : "resnet50",
+    "image_embedding" : 2048,
+    "text_encoder_model" : "model/bert-eng/",
+    "text_embedding" : 768,
+    "text_tokenizer" : "./model/bert-eng/",
+    "max_length" : 200,
+
+    "pretrained" : true,
+    "trainable" : true,
+    "temperature" : 1.0,
+
+    "size" : 224,
+
+    "num_projection_layers" : 1,
+    "projection_dim" : 256,
+    "dropout" : 0.1
+}
